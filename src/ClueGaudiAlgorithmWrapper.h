@@ -39,9 +39,9 @@ public:
   PodioDataSvc* m_podioDataSvc;
 
   // Collections in output
-  DataHandle<edm4hep::CalorimeterHitCollection> fakeClustersHandle{"Output_hits", Gaudi::DataHandle::Writer, this};
-  DataHandle<edm4hep::CalorimeterHitCollection> caloHitsOutliersHandle{"CLUEOutliers", Gaudi::DataHandle::Writer, this};
   DataHandle<edm4hep::ClusterCollection> clustersHandle{"CLUEClusters", Gaudi::DataHandle::Writer, this};
+  DataHandle<edm4hep::CalorimeterHitCollection> caloHitsOutliersHandle{"CLUEOutliers", Gaudi::DataHandle::Writer, this};
+  DataHandle<edm4hep::CalorimeterHitCollection> caloHitsHandle{"CLUEHits", Gaudi::DataHandle::Writer, this};
 
 };
 
