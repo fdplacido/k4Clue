@@ -85,7 +85,7 @@ StatusCode ClueGaudiAlgorithmWrapper::execute() {
   } else {
     throw std::runtime_error("Collection not found.");
   }
-  std::cout << EE_calo_coll->size() << " caloHits in " << EBCaloCollectionName << "." << std::endl;
+  std::cout << EE_calo_coll->size() << " caloHits in " << EECaloCollectionName << "." << std::endl;
 
   // Get collection metadata cellID
   auto EE_collID = EE_calo_coll->getID();
